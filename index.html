@@ -160,9 +160,9 @@
       <section class="start-section" id="start" aria-labelledby="checkout-title">
         <div class="start-copy">
           <p class="eyebrow">Start your assessment</p>
-          <h2 id="checkout-title">Reserve your Golf Performance Assessment.</h2>
+          <h2 id="checkout-title">Start with the secure Swing Strong form.</h2>
           <p>
-            Fill out the basics below, accept the terms, and continue to secure payment. After payment, you will be guided through the intake, video uploads, and consent forms.
+            The full intake, payment, upload steps, consent forms, and acknowledgment details are handled through the secure Swing Strong Jotform.
           </p>
           <div class="summary-card">
             <span>Total today</span>
@@ -171,63 +171,35 @@
           </div>
         </div>
 
-        <form id="assessment-form" class="checkout-form" novalidate>
-          <div class="form-topper">
+        <div class="jotform-card" aria-label="Continue to secure Swing Strong Jotform">
+          <div class="jotform-topper">
             <div>
-              <span>Secure start</span>
-              <strong>Card details stay on checkout</strong>
+              <span>Secure next step</span>
+              <strong>Complete the official assessment form</strong>
             </div>
             <img src="assets/swing-strong-logo.png" alt="" aria-hidden="true">
           </div>
 
-          <div class="field-grid">
-            <label>
-              <span>First name</span>
-              <input id="firstName" name="firstName" autocomplete="given-name" required>
-            </label>
-            <label>
-              <span>Last name</span>
-              <input id="lastName" name="lastName" autocomplete="family-name" required>
-            </label>
+          <div class="jotform-steps" aria-label="What the form includes">
+            <div>
+              <span>01</span>
+              <p>Share your contact details, golf goals, and health background.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <p>Complete payment and review the required acknowledgments.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <p>Continue into the intake, video upload, and follow-up scheduling process.</p>
+            </div>
           </div>
 
-          <label>
-            <span>Email address</span>
-            <input id="email" name="email" type="email" placeholder="example@example.com" autocomplete="email" required>
-          </label>
-
-          <label>
-            <span>Mobile phone number</span>
-            <input id="phone" name="phone" type="tel" placeholder="(000) 000-0000" autocomplete="tel" required>
-          </label>
-
-          <div class="coupon-row">
-            <label>
-              <span>Coupon code</span>
-              <input id="coupon" name="coupon" autocomplete="off">
-            </label>
-            <button class="button ghost" type="button" id="apply-coupon">Apply</button>
-          </div>
-          <p class="field-note" id="coupon-message" role="status"></p>
-
-          <div class="terms-box" tabindex="0">
-            <h3>Terms and conditions acknowledgment</h3>
-            <p>
-              By submitting payment, you acknowledge that you have read, understood, and agree to the Terms and Conditions, Payment Authorization, Liability Waiver, and Privacy Policy associated with this service.
-            </p>
-            <p>
-              You understand that the Golf Performance Evaluation is intended for educational, fitness, and performance purposes and does not establish a provider-patient relationship or constitute medical treatment. Participation is voluntary, and you assume responsibility for your involvement in any recommended activities or exercises.
-            </p>
-          </div>
-
-          <label class="checkbox-row">
-            <input id="terms" name="terms" type="checkbox" required>
-            <span>I agree to the terms and conditions.</span>
-          </label>
-
-          <p class="form-error" id="form-error" role="alert"></p>
-          <button class="button primary full" type="submit">Continue to secure payment</button>
-        </form>
+          <a class="button primary full" href="https://pci.jotform.com/form/261551537343052" target="_blank" rel="noopener">
+            Open secure Jotform
+          </a>
+          <p class="secure-note">Opens the official Swing Strong Jotform in a new tab.</p>
+        </div>
       </section>
     </main>
 
@@ -236,7 +208,7 @@
         <strong>Swing Strong Golf Performance</strong>
         <p>Remote golf movement assessment for golfers who want to move well and play longer.</p>
       </div>
-      <a class="button secondary" href="#start">Start assessment</a>
+      <a class="button secondary" href="https://pci.jotform.com/form/261551537343052" target="_blank" rel="noopener">Start assessment</a>
     </footer>
 
     <script src="script.js"></script>
