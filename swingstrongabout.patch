@@ -1,0 +1,193 @@
+From 7bef34056dffc2cd33360fa51f92c217a6d95093 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Fri, 24 Jul 2026 02:14:45 +0000
+Subject: [PATCH] Add About section
+
+Adds an About section introducing Chris Eversman, PT, DPT (TPI Level 1 and
+Level 2 Medical, Fitness, and Power) with a nav link, a two-column bio
+layout with a credential badge, and highlight points. Placed between the
+Included and CTA bands and fully responsive.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_016112g3hhiMYNNw6X9Dyeon
+---
+ index.html | 35 +++++++++++++++++++
+ styles.css | 98 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 133 insertions(+)
+
+diff --git a/index.html b/index.html
+index ae482f1..6b9676f 100644
+--- a/index.html
++++ b/index.html
+@@ -19,6 +19,7 @@
+       <nav class="nav-links" aria-label="Primary navigation">
+         <a href="#how-it-works">How it works</a>
+         <a href="#included">Included</a>
++        <a href="#about">About</a>
+         <a href="#start">Start</a>
+       </nav>
+       <a class="nav-cta" href="#start">Book assessment</a>
+@@ -147,6 +148,40 @@
+         </div>
+       </section>
+ 
++      <section class="about-section band" id="about" aria-labelledby="about-title">
++        <div class="about-portrait">
++          <img src="assets/swing-strong-logo.png" alt="Swing Strong Golf Performance">
++          <div class="about-credential">
++            <strong>Chris Eversman, PT, DPT</strong>
++            <span>TPI Certified &middot; Doctor of Physical Therapy</span>
++          </div>
++        </div>
++        <div class="about-copy">
++          <p class="eyebrow">About Swing Strong</p>
++          <h2 id="about-title">Golf-specific physical therapy, built around how your body actually moves.</h2>
++          <p>
++            Swing Strong was founded by Chris Eversman, PT, DPT, a Doctor of Physical Therapy and TPI certified provider who helps golfers connect what is happening in their bodies to what is happening in their swings. The goal is simple: find the movement limitations that quietly hold back your comfort, consistency, and power, then give you a clear, practical plan to work on them.
++          </p>
++          <p>
++            With TPI Level 1 and Level 2 certifications across the Medical, Fitness, and Power tracks, Chris blends a golf and health intake, a golf-specific movement screen, and optional swing video review into individualized findings you can use on your own or share with your instructor. It is fully remote, so you can complete it from home and meet virtually to walk through your results.
++          </p>
++          <ul class="about-points">
++            <li>
++              <strong>Doctor of Physical Therapy</strong>
++              <span>PT, DPT &mdash; clinical background in movement and rehabilitation</span>
++            </li>
++            <li>
++              <strong>TPI Level 1 &amp; Level 2</strong>
++              <span>Certified across the Medical, Fitness, and Power tracks</span>
++            </li>
++            <li>
++              <strong>100% remote</strong>
++              <span>Complete from home with a virtual follow-up</span>
++            </li>
++          </ul>
++        </div>
++      </section>
++
+       <section class="cta-band" aria-labelledby="cta-title">
+         <div>
+           <p class="eyebrow">For players and coaches</p>
+diff --git a/styles.css b/styles.css
+index ad4d339..1c77160 100644
+--- a/styles.css
++++ b/styles.css
+@@ -434,6 +434,99 @@ input:focus-visible,
+   background: var(--green);
+ }
+ 
++.about-section {
++  display: grid;
++  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1fr);
++  gap: clamp(34px, 6vw, 82px);
++  align-items: center;
++  padding: clamp(58px, 8vw, 108px) clamp(18px, 5vw, 72px);
++}
++
++.about-portrait {
++  position: relative;
++  border-radius: 12px;
++  overflow: hidden;
++  background:
++    linear-gradient(160deg, rgba(6, 26, 49, 0.06), rgba(79, 143, 34, 0.1));
++  border: 1px solid var(--line);
++  box-shadow: var(--shadow);
++}
++
++.about-portrait img {
++  width: 100%;
++  aspect-ratio: 4 / 5;
++  object-fit: contain;
++  padding: clamp(24px, 5vw, 48px);
++}
++
++.about-credential {
++  position: absolute;
++  left: 18px;
++  bottom: 18px;
++  display: grid;
++  gap: 2px;
++  padding: 12px 16px;
++  border-radius: 8px;
++  color: var(--white);
++  background: rgba(6, 26, 49, 0.9);
++  box-shadow: var(--small-shadow);
++}
++
++.about-credential strong {
++  font-size: 1rem;
++}
++
++.about-credential span {
++  font-size: 0.82rem;
++  color: rgba(255, 255, 255, 0.78);
++}
++
++.about-copy {
++  max-width: 640px;
++}
++
++.about-copy h2 {
++  margin: 0;
++  color: var(--navy);
++  font-size: clamp(2rem, 4.2vw, 4rem);
++  line-height: 1.02;
++}
++
++.about-copy p {
++  margin: 18px 0 0;
++  color: var(--muted);
++  font-size: 1.06rem;
++  line-height: 1.74;
++}
++
++.about-points {
++  display: grid;
++  gap: 14px;
++  margin: 28px 0 0;
++  padding: 0;
++  list-style: none;
++}
++
++.about-points li {
++  display: grid;
++  gap: 4px;
++  padding: 16px 20px;
++  border: 1px solid var(--line);
++  border-left: 4px solid var(--green);
++  border-radius: 8px;
++  background: rgba(255, 255, 255, 0.94);
++  box-shadow: 0 10px 32px rgba(6, 26, 49, 0.06);
++}
++
++.about-points strong {
++  color: var(--navy);
++}
++
++.about-points span {
++  color: var(--muted);
++  font-size: 0.96rem;
++}
++
+ .cta-band {
+   display: grid;
+   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.65fr);
+@@ -634,10 +727,15 @@ input::placeholder {
+   .hero-section,
+   .split-section,
+   .start-section,
++  .about-section,
+   .cta-band {
+     grid-template-columns: 1fr;
+   }
+ 
++  .about-portrait {
++    max-width: 420px;
++  }
++
+   .hero-section {
+     min-height: auto;
+   }
+-- 
+2.43.0
+
