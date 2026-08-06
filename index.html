@@ -246,61 +246,38 @@
       <section class="start-section" id="start" aria-labelledby="checkout-title">
         <div class="start-copy">
           <p class="eyebrow">Start your assessment</p>
-          <h2 id="checkout-title">Start with the secure Swing Strong form.</h2>
+          <h2 id="checkout-title">Choose your assessment and check out.</h2>
           <p>
-            Choose the option that fits how you want to be assessed. Intake, payment, consent forms, and the rest of the details are handled through the secure Swing Strong Jotform.
+            Pick the option that fits how you want to be assessed. Your details and payment are handled on Stripe&rsquo;s secure checkout, and you&rsquo;ll continue to the intake form for your option right after.
           </p>
-          <div class="plan-grid" aria-label="Assessment options">
-            <div class="plan-card">
-              <div class="plan-label">
-                <span>Option 1</span>
-                <strong class="plan-price">$59.99</strong>
-              </div>
-              <h3>Video Submission Assessment</h3>
-              <p class="plan-flow">You record &rarr; we assess &rarr; we review</p>
-              <p>Record and submit your movement videos on your own schedule. Your TPI-certified PT reviews them to build your baseline and plan, then walks you through the results in a virtual review.</p>
+        </div>
+
+        <div class="checkout-options" aria-label="Assessment options">
+          <div class="plan-card">
+            <div class="plan-label">
+              <span>Option 1</span>
+              <strong class="plan-price">$59.99</strong>
             </div>
-            <div class="plan-card featured">
-              <div class="plan-label">
-                <span>Option 2</span>
-                <strong class="plan-price">$99.99</strong>
-              </div>
-              <h3>Live Virtual Assessment</h3>
-              <p class="plan-flow">We assess live &rarr; we review</p>
-              <p>Complete a 16-point Titleist Performance Institute exam live over video with your PT guiding each test in real time, so your results can be discussed right in the session.</p>
+            <h3>Video Submission Assessment</h3>
+            <p class="plan-flow">You record &rarr; we assess &rarr; we review</p>
+            <p>Record and submit your movement screen and swing videos on your own schedule, with a virtual follow-up to review your results.</p>
+            <!-- TODO: replace href with your Stripe Payment Link for Option 1 ($59.99) -->
+            <a class="button primary full" href="https://buy.stripe.com/REPLACE_OPTION_1_LINK" target="_blank" rel="noopener">Select &amp; check out &mdash; $59.99</a>
+          </div>
+          <div class="plan-card featured">
+            <div class="plan-label">
+              <span>Option 2</span>
+              <strong class="plan-price">$99.99</strong>
             </div>
+            <h3>Live Virtual Assessment</h3>
+            <p class="plan-flow">We assess live &rarr; we review</p>
+            <p>Complete a 16-point Titleist Performance Institute exam live with your PT, with your results reviewed right in the session.</p>
+            <!-- TODO: replace href with your Stripe Payment Link for Option 2 ($99.99) -->
+            <a class="button primary full" href="https://buy.stripe.com/REPLACE_OPTION_2_LINK" target="_blank" rel="noopener">Select &amp; check out &mdash; $99.99</a>
           </div>
         </div>
 
-        <div class="jotform-card" aria-label="Continue to secure Swing Strong Jotform">
-          <div class="jotform-topper">
-            <div>
-              <span>Secure next step</span>
-              <strong>Complete the official assessment form</strong>
-            </div>
-            <img src="assets/swing-strong-logo.png" alt="" aria-hidden="true">
-          </div>
-
-          <div class="jotform-steps" aria-label="What the form includes">
-            <div>
-              <span>01</span>
-              <p>Share your contact details, golf goals, and health background.</p>
-            </div>
-            <div>
-              <span>02</span>
-              <p>Complete payment and review the required acknowledgments.</p>
-            </div>
-            <div>
-              <span>03</span>
-              <p>Continue into the intake, movement assessment, and scheduling steps.</p>
-            </div>
-          </div>
-
-          <a class="button primary full" href="https://pci.jotform.com/form/261551537343052" target="_blank" rel="noopener">
-            Open secure Jotform
-          </a>
-          <p class="secure-note">Opens the official Swing Strong Jotform in a new tab.</p>
-        </div>
+        <p class="secure-note">Payments are processed securely by Stripe. After checkout, you&rsquo;ll be taken to the intake form for the option you chose.</p>
       </section>
     </main>
 
@@ -309,7 +286,7 @@
         <strong>Swing Strong Golf Performance</strong>
         <p>Remote golf movement assessment for golfers who want to move well and play longer.</p>
       </div>
-      <a class="button secondary" href="https://pci.jotform.com/form/261551537343052" target="_blank" rel="noopener">Start assessment</a>
+      <a class="button secondary" href="#start">Start assessment</a>
     </footer>
 
     <script src="script.js"></script>
