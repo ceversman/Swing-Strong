@@ -595,6 +595,68 @@ input:focus-visible,
   font-size: 2.2rem;
 }
 
+.plan-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.plan-card {
+  display: grid;
+  gap: 8px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.plan-card.featured {
+  border-color: rgba(79, 143, 34, 0.5);
+  background: var(--white);
+  box-shadow: var(--small-shadow);
+}
+
+.plan-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.plan-label span {
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.plan-price {
+  color: var(--green-dark);
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.plan-card h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.12rem;
+}
+
+.plan-flow {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.plan-card p:not(.plan-flow) {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .checkout-form,
 .jotform-card {
   display: grid;
