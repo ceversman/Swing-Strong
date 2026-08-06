@@ -362,6 +362,29 @@ input:focus-visible,
   line-height: 1.74;
 }
 
+.flow-stack {
+  display: grid;
+  gap: 30px;
+}
+
+.flow-head {
+  margin-bottom: 14px;
+}
+
+.flow-head h3 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 1.18rem;
+}
+
+.flow-tag {
+  margin: 6px 0 0;
+  color: var(--green-dark);
+  font-size: 0.9rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
 .timeline {
   display: grid;
   gap: 16px;
