@@ -318,6 +318,71 @@ input:focus-visible,
   line-height: 1.45;
 }
 
+.system-section {
+  padding: clamp(58px, 8vw, 108px) clamp(18px, 5vw, 72px);
+  background: linear-gradient(180deg, var(--soft), #ffffff);
+}
+
+.system-flow {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.system-step {
+  flex: 1 1 0;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 26px 22px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--green);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--small-shadow);
+}
+
+.system-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--navy);
+  font-weight: 900;
+}
+
+.system-step h3 {
+  margin: 8px 0 0;
+  color: var(--navy);
+  font-size: 1.2rem;
+}
+
+.system-step p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.system-arrow {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  font-weight: 900;
+}
+
+.system-arrow::before {
+  content: "\2192";
+  font-size: 1.6rem;
+}
+
 .split-section,
 .start-section,
 .content-section {
@@ -1008,6 +1073,14 @@ input::placeholder {
 
   .concierge-services {
     grid-template-columns: 1fr;
+  }
+
+  .system-flow {
+    flex-direction: column;
+  }
+
+  .system-arrow::before {
+    content: "\2193";
   }
 
   .hero-section {
