@@ -530,6 +530,15 @@ input:focus-visible,
   background: var(--green);
 }
 
+.mini-icon::before {
+  content: "";
+  width: 13px;
+  height: 7px;
+  border-left: 2.5px solid var(--white);
+  border-bottom: 2.5px solid var(--white);
+  transform: translateY(-2px) rotate(-45deg);
+}
+
 .about-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1fr);
