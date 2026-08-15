@@ -1,15 +1,15 @@
-# Swing Strong
+# Armored Swing
 
 One-page static website for the `ceversman/Swing-Strong` GitHub repository.
 
-The site was recreated from the Swing Strong Jotform at `https://pci.jotform.com/form/261551537343052` and is ready for GitHub Pages.
+The site was recreated from the Armored Swing Jotform at `https://pci.jotform.com/form/261551537343052` and is ready for GitHub Pages.
 
 ## Files
 
 - `index.html` is the main website.
 - `styles.css` contains the responsive design.
 - `script.js` records CTA clicks locally for lightweight client-side enhancement.
-- `assets/swing-strong-logo.png` is the downloaded Swing Strong logo.
+- `assets/armored-swing-logo.png` is the downloaded Armored Swing logo.
 - `thank-you.html` is available if you later add a direct lead form flow.
 
 ## GitHub Pages
@@ -32,7 +32,7 @@ From a local clone of `https://github.com/ceversman/Swing-Strong`:
 
 ```bash
 git add .
-git commit -m "Add Swing Strong website"
+git commit -m "Add Armored Swing website"
 git push origin main
 ```
 
