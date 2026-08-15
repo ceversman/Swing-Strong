@@ -253,13 +253,12 @@ input:focus-visible,
 }
 
 .hero-visual img {
-  width: min(100%, 520px);
-  max-height: min(66vh, 560px);
-  padding: clamp(10px, 2vw, 18px);
+  width: min(100%, 560px);
+  max-height: min(70vh, 600px);
+  padding: 0;
   object-fit: contain;
-  border: 1px solid rgba(255, 255, 255, 0.34);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  background: var(--white);
   box-shadow: var(--shadow);
 }
 
