@@ -716,6 +716,24 @@ input:focus-visible,
   font-weight: 800;
 }
 
+.gear-section {
+  padding: clamp(58px, 8vw, 108px) clamp(18px, 5vw, 72px);
+}
+
+.gear-cta {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+}
+
+.gear-disclosure {
+  margin: 0;
+  max-width: 640px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .contact-section {
   padding: clamp(58px, 8vw, 108px) clamp(18px, 5vw, 72px);
 }
