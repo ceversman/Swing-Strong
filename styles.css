@@ -754,6 +754,35 @@ input:focus-visible,
   justify-self: start;
 }
 
+.product-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.product-sizes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--navy);
+  background: var(--mist);
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.product-sizes a:hover,
+.product-sizes a:focus-visible {
+  color: var(--white);
+  background: var(--green);
+  border-color: var(--green);
+}
+
 .products-disclosure {
   margin: 28px 0 0;
   max-width: 640px;
