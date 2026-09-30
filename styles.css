@@ -90,6 +90,7 @@ p {
 .nav-links a,
 .nav-cta {
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
